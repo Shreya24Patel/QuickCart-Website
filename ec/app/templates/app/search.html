@@ -1,0 +1,41 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Search Results{% endblock title %}
+{% block main-content %}
+<style>
+    /* Hover effect */
+    .hover-effect {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-effect:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row d-flex flex-wrap justify-content-start">  <!-- Ensure horizontal alignment -->
+                {% for prod in product %}
+                    <div class="col-md-4 col-sm-6 col-12 p-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <a href="{% url 'product-detail' prod.id %}" class="btn w-100">
+                            <div class="card hover-effect">
+                                <img src="{{ prod.product_image.url }}" class="card-img-top" alt="{{ prod.title }}" style="height: 200px; object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="fw-bold">{{ prod.title }}</h5>
+                                    <p class="fw-bold text-danger">
+                                        Rs.{{ prod.discounted_price }}/-
+                                        <small class="fw-light text-decoration-line-through">{{ prod.selling_price }}</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main-content %}

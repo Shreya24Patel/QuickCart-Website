@@ -1,0 +1,326 @@
+/*.navbar {
+    background-color: #6B8E23;
+    height: 100px;
+}
+.navbar img{
+    height: 150px;
+    width : 150px;
+}
+.container-fluid {
+    background-color: white ;
+    
+}
+.nav-link {
+  color : brown
+}
+.nav-link active{
+    color: brown;
+}*/
+/*
+.buttermilk{
+    background-color:#fff;background-image:linear-gradient(#fff7ef, #fff);
+    background-image:-webkit-linear-gradient(#fff7ef, #fff);
+    background-image:-moz-linear-gradient(#fff7ef, #fff);
+    background-image:-ms-linear-gradient(#fff7ef, #fff);
+    background-image:-o-linear-gradient(#fff7ef, #fff);
+    padding:40px 30px;
+    border:1px solid #efe8e1;
+    padding-bottom:20px;
+}
+
+.smbg{
+    background-color:#fff;
+    background-image:linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-webkit-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-moz-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-ms-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-o-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+}
+
+.curdbgpro{
+    background-color:#fff;
+    background-image:linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+    background-image:-webkit-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+    background-image:-moz-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+    background-image:-ms-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+    background-image:-o-linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+}
+.goodnesseccount img{
+    width:100%;
+    height: auto;
+}
+
+.mlkpro{
+    color:#636362;
+    font-size:22px;
+    line-height:22px;
+    margin-bottom:15px;
+    width:43%;
+    margin:0 auto;
+    text-align:center;
+    
+}
+
+.goodnesssec a{
+    text-decoration: none;
+}
+/* General Settings */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffdf7;
+    color: #4e342e;
+    margin: 0;
+    padding: 0;
+}
+/* Logo Container */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+     /* Light pastel background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the logo */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+/* Logo Image */
+.logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px; /* Space between the image and text */
+    border-radius: 50%; /* Circular shape if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow around the logo */
+}
+
+/* Logo Text */
+
+
+/* Hover Effect */
+.logo-container:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color: #8d6e63; /* Warm, muted brown for a darker aesthetic */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-bottom: 3px solid #d1a377; /* Complementary golden brown border */
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    color: #fbe9e7; /* Soft cream for text to contrast with the dark background */
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #ffcc80; /* Warm pastel orange for hover effect */
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #d1a377; /* Toggler button matches the border color */
+}
+
+.navbar-toggler-icon {
+    background-image: linear-gradient(to bottom, #fff 40%, #fbe9e7 40%); /* Styled icon for contrast */
+}
+
+.dropdown-menu {
+    background-color: #5e3c2d; /* Darker background for dropdown */
+    border: 1px solid #d1a377; /* Matches the navbar border */
+}
+
+.dropdown-item {
+    color: #fbe9e7; /* Light text for readability */
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background-color: #d1a377; /* Highlight effect */
+    color: #fff;
+}
+
+/* Profile Dropdown */
+#profileDropdown {
+    color: #fbe9e7;
+    font-weight: bold;
+}
+
+#profileDropdown:hover {
+    color: #ffcc80;
+}
+
+/* Wishlist, Cart, and Login */
+.nav-item a {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fbe9e7;
+}
+
+.nav-item a:hover {
+    background-color: #d1a377;
+    color: #fff;
+}
+
+
+/* Form */
+.form-control {
+    border-radius: 20px;
+    border: 1px solid #ffab91;
+}
+
+.btn-outline-success {
+    border-color: #ffcc80;
+    color: #ffcc80;
+    border-radius: 20px;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffcc80;
+    color: #fff;
+}
+
+/* Profile Dropdown */
+#profileDropdown {
+    color: #fff;
+    font-weight: bold;
+}
+
+#profileDropdown:hover {
+    color: #ffcc80;
+}
+
+/* Footer */
+footer {
+    background-color: #8d6e63;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Banner Slider */
+
+
+/* Buttons and Links */
+a {
+    color: #4e342e;
+}
+
+a:hover {
+    color: #ffcc80;
+    text-decoration: none;
+}
+
+/* Utility Classes */
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Wishlist, Cart, and Login */
+.nav-item a {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.nav-item a:hover {
+    background-color: #ffcc80;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+}
+/* Carousel */
+.carousel-inner img {
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+    transition: transform 0.5s ease; /* Smooth zoom effect on hover */
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05); /* Slight zoom effect for hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
+    border-radius: 50%; /* Round shape for controls */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker hover effect */
+}
+
+/* Information Section */
+.container .row.text-center {
+    background-color: #ffe5d9; /* Soft pastel peach */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
+
+.container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #8e6240; /* Warm brown */
+}
+
+/* Product Section */
+.mlkpro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4e342e; /* Warm brown for text */
+    margin-top: 10px;
+}
+
+.goodnesseccount {
+    background-color: #fdf3f0; /* Light pastel background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    padding: 20px;
+}
+
+.goodnesseccount:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background-color: #fbe9e7; /* Slightly darker pastel on hover */
+}
+
+.goodnesseccount img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.goodnesseccount img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}

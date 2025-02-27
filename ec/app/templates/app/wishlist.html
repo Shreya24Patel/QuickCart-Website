@@ -1,0 +1,33 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Search Results{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                {% for prod in product %}
+                <div class="col">
+                    <a href="{% url 'product-detail' prod.product.id %}" class="text-decoration-none text-dark">
+                        <div class="card shadow-sm border-0 h-100">
+                            <img src="{{ prod.product.product_image.url }}" class="card-img-top rounded" alt="{{ prod.product.title }}" style="height: 200px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h6 class="fw-bold">{{ prod.product.title }}</h6>
+                                <p class="fw-bold text-danger mb-1">
+                                    Rs.{{ prod.discounted_price }}/-
+                                    <small class="fw-light text-decoration-line-through text-muted">{{ prod.product.selling_price }}</small>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% empty %}
+                <div class="col-12 text-center">
+                    <p class="text-muted">No products found.</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main-content %}
